@@ -17,7 +17,7 @@ import (
 )
 
 var CircularReferenceError = "kin-openapi bug found: circular schema reference not handled"
-var CircularReferenceCounter = 3
+var CircularReferenceCounter = 100
 
 func foundUnresolvedRef(ref string) error {
 	return fmt.Errorf("found unresolved ref: %q", ref)
